@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u2g-Sg-KnG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NormalApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdD-Se-Flr">
+                                <rect key="frame" x="45" y="552" width="300" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="31y-vb-Rwz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="mJM-cT-mAp"/>
+                                </constraints>
+                                <string key="text">An augmented reality single-player game based on the red light, green light game featured in Netflix’s TV show Squid Game. Go to WashU's Mudd Field to play!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BearSurvival" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTW-sW-Q3z">
+                                <rect key="frame" x="119" y="88" width="152" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Wil-nM-WFp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krf-Yu-F0g">
+                                <rect key="frame" x="145" y="709" width="101" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="How to Play"/>
+                                <connections>
+                                    <action selector="howToPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enO-kK-uUT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-7w-M6u">
+                                <rect key="frame" x="128" y="757" width="135" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Enter AR Mode"/>
+                                <connections>
+                                    <action selector="goAR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUg-t5-OJA"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BearSurvival Icon" translatesAutoresizingMaskIntoConstraints="NO" id="ARD-r2-cow">
+                                <rect key="frame" x="80" y="140" width="230" height="411"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ARD-r2-cow" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="0yT-J0-DbR"/>
+                            <constraint firstItem="2b1-7w-M6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="1jR-0v-kcJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2b1-7w-M6u" secondAttribute="trailing" constant="127" id="6FW-3l-hdX"/>
+                            <constraint firstItem="NdD-Se-Flr" firstAttribute="top" secondItem="ARD-r2-cow" secondAttribute="bottom" constant="1" id="8aF-dP-0Uo"/>
+                            <constraint firstItem="Krf-Yu-F0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="C6V-cI-q3B"/>
+                            <constraint firstItem="ARD-r2-cow" firstAttribute="leading" secondItem="NdD-Se-Flr" secondAttribute="trailing" constant="-265" id="EH4-Y3-UF8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Krf-Yu-F0g" secondAttribute="trailing" constant="144" id="GKz-OR-7LF"/>
+                            <constraint firstItem="ARD-r2-cow" firstAttribute="centerX" secondItem="MTW-sW-Q3z" secondAttribute="centerX" id="Hi0-it-ngB"/>
+                            <constraint firstItem="MTW-sW-Q3z" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="MLb-9C-frb"/>
+                            <constraint firstItem="2b1-7w-M6u" firstAttribute="top" secondItem="Krf-Yu-F0g" secondAttribute="bottom" constant="17" id="PEq-a8-Y9q"/>
+                            <constraint firstItem="Krf-Yu-F0g" firstAttribute="top" secondItem="NdD-Se-Flr" secondAttribute="bottom" constant="16" id="Q6h-Nr-Lp2"/>
+                            <constraint firstItem="2b1-7w-M6u" firstAttribute="top" secondItem="NdD-Se-Flr" secondAttribute="bottom" constant="64" id="bVh-td-lLn"/>
+                            <constraint firstItem="MTW-sW-Q3z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="co0-dG-iys"/>
+                            <constraint firstItem="NdD-Se-Flr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="e5M-oG-npm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ARD-r2-cow" secondAttribute="trailing" constant="80" id="fcu-wr-317"/>
+                            <constraint firstItem="NdD-Se-Flr" firstAttribute="top" secondItem="MTW-sW-Q3z" secondAttribute="bottom" constant="430" id="kkI-SA-4h8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NdD-Se-Flr" secondAttribute="trailing" constant="45" id="mhX-Hz-fOK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="MTW-sW-Q3z" secondAttribute="trailing" constant="119" id="vs3-eu-GIp"/>
+                            <constraint firstItem="ARD-r2-cow" firstAttribute="top" secondItem="MTW-sW-Q3z" secondAttribute="bottom" constant="18" id="vs5-ei-LgT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2b1-7w-M6u" secondAttribute="bottom" constant="22" id="vt9-Jr-SO8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sZG-kY-N89"/>
+                    <connections>
+                        <segue destination="V3F-yb-bJx" kind="show" identifier="gameInstructions" id="RpG-eg-u0L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.30769230769226" y="83.175355450236964"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0fQ-Bb-lVx">
+            <objects>
+                <viewController id="V3F-yb-bJx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ISk-Kf-MAX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vio-GR-iyl">
+                                <rect key="frame" x="126" y="130" width="138" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="1. Players should first &quot;Enter AR Mode&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i30-Xr-BrZ">
+                                <rect key="frame" x="75" y="207" width="240" height="49.666666666666686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49.666666666666657" id="sAV-OY-i1p"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="2. Players have 60 seconds to reach the bounded line according to the map at the bottom left of the screen" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YnL-Yh-hva">
+                                <rect key="frame" x="75" y="260" width="240" height="85"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="4. To win the game, the player needs to reach the finish line before time runs out and avoid being caught moving by the doll." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ewV-Ya-nNO">
+                                <rect key="frame" x="75" y="595" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="peK-IV-e5m"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OjP-pm-ong">
+                                <rect key="frame" x="75" y="353" width="240" height="233.33333333333337"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="233.33333333333337" id="ogf-rI-iBb"/>
+                                </constraints>
+                                <string key="text">3. Once the game starts, the rules are nearly identical to Squid Game's. When the doll isn't facing the user, the player is free to move toward the finish line. However, they must stop once the doll turns back toward the player. If the player happens to move when the doll is facing them, the player will lose. The player will also lose if they do not reach the finish line by the allotated time in the bottom right corner.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gFC-fk-orv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ewV-Ya-nNO" firstAttribute="top" secondItem="OjP-pm-ong" secondAttribute="bottom" constant="8.6666666666666288" id="4ew-bl-7mr"/>
+                            <constraint firstItem="gFC-fk-orv" firstAttribute="trailing" secondItem="ewV-Ya-nNO" secondAttribute="trailing" constant="75" id="9xH-t4-OYa"/>
+                            <constraint firstItem="i30-Xr-BrZ" firstAttribute="trailing" secondItem="YnL-Yh-hva" secondAttribute="trailing" id="Dha-18-QnK"/>
+                            <constraint firstItem="gFC-fk-orv" firstAttribute="trailing" secondItem="Vio-GR-iyl" secondAttribute="trailing" constant="126" id="HSH-r2-YoL"/>
+                            <constraint firstItem="OjP-pm-ong" firstAttribute="leading" secondItem="gFC-fk-orv" secondAttribute="leading" constant="75" id="KiD-sY-kxj"/>
+                            <constraint firstItem="gFC-fk-orv" firstAttribute="trailing" secondItem="i30-Xr-BrZ" secondAttribute="trailing" constant="75" id="LgF-DI-FjZ"/>
+                            <constraint firstItem="OjP-pm-ong" firstAttribute="top" secondItem="YnL-Yh-hva" secondAttribute="bottom" constant="8" symbolic="YES" id="Pom-t6-24i"/>
+                            <constraint firstItem="i30-Xr-BrZ" firstAttribute="leading" secondItem="YnL-Yh-hva" secondAttribute="leading" id="TzH-pn-LP3"/>
+                            <constraint firstItem="i30-Xr-BrZ" firstAttribute="top" secondItem="Vio-GR-iyl" secondAttribute="bottom" constant="44" id="XOu-2K-3go"/>
+                            <constraint firstItem="gFC-fk-orv" firstAttribute="trailing" secondItem="OjP-pm-ong" secondAttribute="trailing" constant="75" id="XSx-Qw-YTe"/>
+                            <constraint firstItem="i30-Xr-BrZ" firstAttribute="leading" secondItem="OjP-pm-ong" secondAttribute="leading" id="gct-kL-0gI"/>
+                            <constraint firstItem="gFC-fk-orv" firstAttribute="trailing" secondItem="YnL-Yh-hva" secondAttribute="trailing" constant="75" id="gyG-zv-EDW"/>
+                            <constraint firstItem="YnL-Yh-hva" firstAttribute="top" secondItem="i30-Xr-BrZ" secondAttribute="bottom" constant="3.3333333333333428" id="kzK-V6-a5d"/>
+                            <constraint firstItem="i30-Xr-BrZ" firstAttribute="leading" secondItem="gFC-fk-orv" secondAttribute="leading" constant="75" id="mOg-vd-Egx"/>
+                            <constraint firstItem="Vio-GR-iyl" firstAttribute="top" secondItem="gFC-fk-orv" secondAttribute="top" constant="42" id="q6W-2i-UrB"/>
+                            <constraint firstItem="YnL-Yh-hva" firstAttribute="leading" secondItem="gFC-fk-orv" secondAttribute="leading" constant="75" id="qGE-ST-9Nq"/>
+                            <constraint firstItem="Vio-GR-iyl" firstAttribute="leading" secondItem="gFC-fk-orv" secondAttribute="leading" constant="126" id="tsv-dx-lRU"/>
+                            <constraint firstItem="i30-Xr-BrZ" firstAttribute="trailing" secondItem="OjP-pm-ong" secondAttribute="trailing" id="uW7-cO-al8"/>
+                            <constraint firstItem="gFC-fk-orv" firstAttribute="bottom" secondItem="ewV-Ya-nNO" secondAttribute="bottom" constant="87" id="uZ9-p8-hAT"/>
+                            <constraint firstItem="i30-Xr-BrZ" firstAttribute="trailing" secondItem="ewV-Ya-nNO" secondAttribute="trailing" id="wzg-Wh-hy4"/>
+                            <constraint firstItem="i30-Xr-BrZ" firstAttribute="leading" secondItem="ewV-Ya-nNO" secondAttribute="leading" id="xVV-oR-VUR"/>
+                            <constraint firstItem="ewV-Ya-nNO" firstAttribute="leading" secondItem="gFC-fk-orv" secondAttribute="leading" constant="75" id="zJb-I4-J43"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HZ3-a2-sCZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mM-OP-t8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N46-Er-sTI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u2g-Sg-KnG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gj0-Fv-nLw">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hAx-L6-2Bm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxv-Zh-ffc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BearSurvival Icon" width="630" height="1280"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
